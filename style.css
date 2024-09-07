@@ -1,0 +1,50 @@
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.quote-display {
+  margin: 20px 0;
+  font-size: 1.5em;
+}
+
+.navigation button,
+.font-control button {
+  margin: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.theme-toggle {
+  margin-top: 20px;
+}
+
+/* Dark mode styling */
+.light-mode {
+  background-color: white;
+  color: black;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+  .quote-display {
+    font-size: 1.2em;
+  }
+
+  button {
+    padding: 5px 10px;
+  }
+}
