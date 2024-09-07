@@ -1,13 +1,40 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Basic styling */
 body {
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent scrolling due to parallax movement */
   transition: background-color 0.3s, color 0.3s;
 }
 
+/*background styling */
+.parallax-wrapper {
+  background-image: url('./images/background.png'); /* Add your own background image */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh; /* Cover full viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-position 0.2s ease-in-out;
+}
+
+.parallax-wrapper:hover {
+  background-position: center 20%; /* Change background position on hover for movement */
+}
+
 .container {
-  max-width: 600px;
-  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent for focus on text */
   padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
   text-align: center;
 }
 
@@ -16,18 +43,16 @@ body {
   font-size: 1.5em;
 }
 
+/* Navigation and buttons styling */
 .navigation button,
 .font-control button {
   margin: 10px;
   padding: 10px 20px;
+  font-size: 1em;
   cursor: pointer;
 }
 
-.theme-toggle {
-  margin-top: 20px;
-}
-
-/* Dark mode styling */
+/* Light and dark modes */
 .light-mode {
   background-color: white;
   color: black;
@@ -42,9 +67,5 @@ body {
 @media (max-width: 600px) {
   .quote-display {
     font-size: 1.2em;
-  }
-
-  button {
-    padding: 5px 10px;
   }
 }

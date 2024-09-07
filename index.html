@@ -7,41 +7,42 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="light-mode">
-  <div class="container">
-    <h1>Quote Generator</h1>
-    
-    <!-- Category selection -->
-    <div class="category-selection">
-      <label>Select Category:</label>
-      <select id="category">
-        <option value="all">All</option>
-        <option value="science">Science</option>
-        <option value="philosophy">Philosophy</option>
-      </select>
-    </div>
+  <!-- Parallax background wrapper -->
+  <div class="parallax-wrapper">
+    <div class="container">
+      <h1>Quote Generator</h1>
 
-    <!-- Quote display -->
-    <div class="quote-display">
-      <p id="quote-text">"Your quote will appear here..."</p>
-    </div>
+      <!-- Category selection -->
+      <div class="category-selection">
+        <label>Select Category:</label>
+        <select id="category">
+          <option value="all">All</option>
+          <option value="science">Science</option>
+          <option value="philosophy">Philosophy</option>
+        </select>
+      </div>
 
-    <!-- Navigation buttons -->
-    <div class="navigation">
-      <button id="prev-quote">Previous</button>
-      <button id="next-quote">Next</button>
-      <button id="random-quote">Random</button>
-    </div>
+      <!-- Quote display -->
+      <div class="quote-display">
+        <p id="quote-text">"Your quote will appear here..."</p>
+      </div>
 
-    <!-- Font size control -->
-    <div class="font-control">
-      <button id="increase-font">Increase Font</button>
-      <button id="decrease-font">Decrease Font</button>
-    </div>
-
-    <!-- Dark/Light mode switch -->
-    <div class="theme-toggle">
-      <label>Toggle Dark Mode</label>
-      <input type="checkbox" id="dark-mode-toggle">
+      <!-- Navigation buttons -->
+      <div class="navigation">
+        <button id="prev-quote">Previous</button>
+        <button id="next-quote">Next</button>
+        <button id="random-quote">Random</button>
+      </div>
+      
+      <!-- Font size control and dark mode -->
+      <div class="font-control">
+        <button id="increase-font">Increase Font</button>
+        <button id="decrease-font">Decrease Font</button>
+      </div>
+      <div class="theme-toggle">
+        <label>Toggle Dark Mode</label>
+        <input type="checkbox" id="dark-mode-toggle">
+      </div>
     </div>
   </div>
 
