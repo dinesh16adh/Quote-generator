@@ -69,3 +69,44 @@ body {
     font-size: 1.2em;
   }
 }
+body {
+  overflow-x: hidden;
+}
+
+.parallax-wrapper {
+  background-image: url('./images/background.png'); /* Replace with your image */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 0 0;
+  animation: moveBackground 20s infinite linear;
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+/* Smooth parallax scrolling effect */
+body {
+  overflow-x: hidden;
+}
+
+.parallax-wrapper {
+  background-image: url('your-background.jpg'); /* Replace with your image */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 0 0;
+  animation: moveBackground 10s infinite linear;
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
