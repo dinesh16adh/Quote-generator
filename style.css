@@ -94,13 +94,7 @@ body {
   overflow-x: hidden;
 }
 
-.parallax-wrapper {
-  background-image: url('your-background.jpg'); /* Replace with your image */
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: 0 0;
-  animation: moveBackground 10s infinite linear;
-}
+
 
 @keyframes moveBackground {
   0% {
